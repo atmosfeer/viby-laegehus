@@ -1,0 +1,80 @@
+.home-banner {
+  background:
+  linear-gradient(
+    rgba(0, 0, 0, 0.4),
+    rgba(0, 0, 0, 0.8)
+    ),
+  image-url("background_hj.jpg");
+  background-size: cover;
+  background-position: center center;
+  padding: 50px 0px 150px 0px;
+  h1 {
+    color: white;
+    padding-bottom: 20px;
+  }
+}
+
+.total-container {
+  min-height: 82vh;
+  background: #eeeeee;
+}
+
+.welcome-header {
+  margin-top: 0px;
+  margin-bottom: 25px;
+}
+
+.opening-hours {
+  font-size: 18px;
+}
+
+.home-card {
+  background: rgba(255, 255, 255, 0.8);
+  border-radius: 4px;
+  padding: 10px 0px 10px 0px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  margin-bottom: 20px
+}
+
+.selvbetjening-button {
+  color: black;
+  margin: 5px 20px 5px 20px;
+  padding: 10px 15px;
+  border-radius: 4px;
+  font-weight: bold;
+  background: #E8C547;
+  transition: 0.3s ease;
+  opacity: 0.8;
+}
+// Find os
+.map-container {
+  position: relative;
+  img {
+    width: 100%;
+  }
+  margin-bottom:20px
+}
+
+.address-container{
+  position: absolute;
+  bottom: 27px;
+  background-color: rgba(0,0,0, 0.7);
+  padding: 3px 10px;
+  border-radius: 4px;
+  color: white;
+  text-align: left;
+}
+
+.selvbetjening-button:hover {
+  opacity: 1;
+  background: #E8C547;
+  text-decoration: none;
+  color: black;
+}
+
+.akutnr {
+  font-weight: bold;
+  font-size: 20px;
+}

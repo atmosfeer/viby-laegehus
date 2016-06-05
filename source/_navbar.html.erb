@@ -11,35 +11,36 @@
   <div class="navbar-wagon-right hidden-xs hidden-sm">
 
     <!-- Text link -->
-      <span class="navbar-link-wrapper">
-        <%= link_to "Forside", "/" ,class: "navbar-wagon-item navbar-wagon-link"%>
-      </span>
+      <% link_to "/", class: "navbar-wagon-item navbar-wagon-link navbar-link-wrapper" do %>
+        <p>Forside</p>
+      <% end %>
 
-      <span class="navbar-link-wrapper">
-        <div class="dropdown">
-            <a class="dropdown-toggle navbar-wagon-item navbar-wagon-link" data-toggle="dropdown"> Praktisk Info </a>
-            <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
-              <li>
-                <%= link_to "Kalender","praktisk_info.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
-              </li>
-              <li>
-                <%= link_to "Informationer","om_os.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
-              </li>
-              <li>
-                <%= link_to "Om os","om_os.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
-              </li>
-            </ul>
-        </div>
-      </span>
 
-      <span class="navbar-link-wrapper">
-        <%= link_to "Om os", "om_os.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
-      </span>
+      <div class="dropdown">
+        <span class="navbar-link-wrapper">
+          <a class="dropdown-toggle navbar-wagon-item navbar-wagon-link" data-toggle="dropdown">Praktisk info</a>
+          <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
+            <li>
+              <%= link_to "Kalender","praktisk_info.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
+            </li>
+            <li>
+              <%= link_to "Informationer","om_os.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
+            </li>
+            <li>
+              <%= link_to "Om os","om_os.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
+            </li>
+          </ul>
+        </span>
+      </div>
 
-      <span class="navbar-link-wrapper">
-        <%= link_to "Kontakt", "kontakt.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
-      </span>
 
+      <% link_to "om_os.html", class: "navbar-wagon-item navbar-wagon-link navbar-link-wrapper" do %>
+        <p>Om os</p>
+      <% end %>
+
+      <% link_to "kontakt.html", class: "navbar-wagon-item navbar-wagon-link navbar-link-wrapper" do %>
+        <p>Kontakt</p>
+      <% end %>
     </div>
 
   <!-- Dropdown appearing on mobile only -->
@@ -69,7 +70,7 @@
   </div>
 
   <div class="hidden-xs hidden-sm navbar-wagon-item navbar-phone">
-    <p>Telefon 86 87 87 62</p>
+    <p>Telefon 86 23 24 25</p>
   </div>
 
 </div>
