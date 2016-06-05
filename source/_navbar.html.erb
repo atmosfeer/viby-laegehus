@@ -1,8 +1,8 @@
 <div class="navbar-wagon">
   <!-- Logo -->
   <% link_to "/", class: "navbar-wagon-brand" do %>
-    <%= image_tag "logo_1.svg" %>
-    <div id="logo-header"><p>Viby Lægehus</p></div>
+    <%= image_tag "favicon.png" %>
+    <div id="logo-header"><h2>Viby Lægehus</h2></div>
   <% end %>
 
 
@@ -43,9 +43,11 @@
     </div>
 
   <!-- Dropdown appearing on mobile only -->
+<!--   Tilføj Menu ved siden af dropdown icon -->
   <div class="navbar-wagon-item hidden-md hidden-lg">
-    <div class="dropdown">
+    <div class="dropdown explicit-menu-container">
       <i class="fa fa-bars dropdown-toggle" data-toggle="dropdown"></i>
+      <div class="explicit-menu"><p>Menu</p></div>
       <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
 
         <li>
@@ -65,4 +67,9 @@
       </ul>
     </div>
   </div>
+
+  <div class="hidden-xs hidden-sm navbar-wagon-item navbar-phone">
+    <p>Telefon 86 87 87 62</p>
+  </div>
+
 </div>
