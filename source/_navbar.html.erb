@@ -15,10 +15,11 @@
         <p>Forside</p>
       <% end %>
 
-
+      <span class="navbar-link-wrapper navbar-wagon-item navbar-wagon-link">
       <div class="dropdown">
-        <span class="navbar-link-wrapper">
-          <a class="dropdown-toggle navbar-wagon-item navbar-wagon-link" data-toggle="dropdown">Praktisk info</a>
+          <p class="dropdown-toggle" data-toggle="dropdown">
+            Praktisk info <i class="fa fa-caret-down" aria-hidden="true"></i>
+          </p>
           <ul class="dropdown-menu dropdown-menu-right navbar-wagon-dropdown-menu">
             <li>
               <%= link_to "Kalender","praktisk_info.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
@@ -30,8 +31,9 @@
               <%= link_to "Om os","om_os.html" ,class: "navbar-wagon-item navbar-wagon-link"%>
             </li>
           </ul>
-        </span>
       </div>
+      </span>
+
 
 
       <% link_to "om_os.html", class: "navbar-wagon-item navbar-wagon-link navbar-link-wrapper" do %>
