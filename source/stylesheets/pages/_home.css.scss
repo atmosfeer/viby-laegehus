@@ -35,6 +35,8 @@ h1 {
 
 .home-card {
   background: rgba(255, 255, 255, 0.8);
+  max-width: 450px;
+  margin: 0px auto 20px auto !important;
   border-radius: 4px;
   padding: 10px 0px 10px 0px;
   display: flex;
