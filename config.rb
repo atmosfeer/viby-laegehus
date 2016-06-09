@@ -79,8 +79,11 @@ configure :build do
 end
 
 # Deployment
+#
+#
 activate :deploy do |deploy|
   deploy.method = :git
+  deploy.branch = 'master'
   deploy.build_before = true
 
   # Optional Settings
