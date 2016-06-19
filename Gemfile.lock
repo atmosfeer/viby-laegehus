@@ -84,6 +84,11 @@ GEM
       middleman-core (>= 3.2)
       net-sftp
       ptools
+    middleman-google-analytics (2.1.1)
+      activesupport (~> 4.1)
+      erubis
+      middleman-core (>= 3.4)
+      uglifier (>= 2.5, < 4.0)
     middleman-sprockets (3.4.2)
       middleman-core (>= 3.3)
       sprockets (~> 2.12.1)
@@ -146,6 +151,7 @@ DEPENDENCIES
   middleman (~> 3.4)
   middleman-autoprefixer
   middleman-deploy (~> 1.0)
+  middleman-google-analytics (~> 2.1)
 
 BUNDLED WITH
    1.11.2
